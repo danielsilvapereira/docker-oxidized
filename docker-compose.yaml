@@ -1,0 +1,12 @@
+services:
+  oxidized:
+    build: .
+    container_name: oxidized
+    restart: always
+    ports:
+      - "80:8888"
+    environment:
+      CONFIG_RELOAD_INTERVAL: 600
+    volumes:
+      - /etc/oxidized:/root/.config/oxidized/
+      - /etc/oxidized/output:/root/.config/output
