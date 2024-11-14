@@ -27,4 +27,4 @@ COPY zabbix-sync.py /root/.config/oxidized/
 WORKDIR /root/.config/oxidized/
 
 # Comando para iniciar o script Python e o Oxidized simultaneamente
-CMD ["sh", "-c", "python3 zabbix-sync.py & oxidized"]
+CMD ["sh", "python3 zabbix-sync.py & oxidized"]
